@@ -12,3 +12,4 @@
 #     value = "alias kubectl='${module.bastion.kubectl_command}'"
 # }
 
+# asdfasdf

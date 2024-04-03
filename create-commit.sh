@@ -4,10 +4,11 @@
 new_branch=$1
 
 # Create 10 files and make some changes to them
+touch "file-$new_branch.txt"
 for i in {1..5}
 do
-    touch "file$i.txt"
-    echo "This is file $i" >> "file$i.txt"
+    
+    echo "This is file $i" >> "file-$new_branch.txt"
 done
 
 # Stage all changes

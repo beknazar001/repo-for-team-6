@@ -13,15 +13,13 @@ resource "google_service_account" "bastion" {
 #   direction = "INGRESS"
 #   project = var.project_id
 #   source_ranges = [ "0.0.0.0/0" ]
-
 #   allow {
 #     protocol = "tcp"
 #     ports = ["22"]
 #   }
-
 #   target_tags = ["bastion"]
 # }
-
+# Have added to the remote repository
 # data "template_file" "startup_script" {
 #   template = <<-EOF
 #   sudo yum update -y

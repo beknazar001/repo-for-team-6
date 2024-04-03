@@ -16,7 +16,7 @@ git commit -m "First feature commit"
 git checkout main
 git pull origin main
 echo "Second feature commit for main" >> feature2.txt
-git add feature.txt
+git add feature2.txt
 git commit -m "Second feature commit"
 # Step 4: Make sure the main branch is up to date
 

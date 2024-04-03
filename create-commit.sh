@@ -6,6 +6,7 @@ new_branch=$1
 # Create 10 files and make some changes to them
 touch "file-$new_branch.txt"
 git checkout -b "$new_branch" main
+git checkout  "$new_branch" 
 for i in {1..5}
 do
     

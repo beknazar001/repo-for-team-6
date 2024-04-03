@@ -126,3 +126,6 @@ module "bastion" {
   vpc_name     = module.google_networks.vpc_name
   subnet_name  = module.google_networks.subnet_name[2]
 }
+
+#change 1
+

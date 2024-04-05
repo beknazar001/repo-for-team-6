@@ -134,3 +134,13 @@ module "bastion" {
 #change 1
 
 #change by nasiba
+module "bastion" {
+  source = "./bastion"
+
+  region       = var.region
+  project_id   = var.project_id
+  zone         = var.main_zone
+  bastion_name = "app-cluster"
+  vpc_name     = module.google_networks.vpc_name
+  subnet_name  = module.google_networks.subnet_name[2]
+}
